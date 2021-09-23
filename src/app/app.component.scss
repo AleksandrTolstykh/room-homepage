@@ -1,0 +1,144 @@
+.menu-bar {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  &.image-1 {
+    background-image: url("../assets/desktop-image-hero-1.jpg");
+    @media screen and (max-width: 768px) {
+      background-image: url("../assets/mobile-image-hero-1.jpg");
+    }
+  }
+
+  &.image-2 {
+    background-image: url("../assets/desktop-image-hero-2.jpg");
+    @media screen and (max-width: 768px) {
+      background-image: url("../assets/mobile-image-hero-2.jpg");
+    }
+  }
+
+  &.image-3 {
+    background-image: url("../assets/desktop-image-hero-3.jpg");
+    @media screen and (max-width: 768px) {
+      background-image: url("../assets/mobile-image-hero-3.jpg");
+    }
+  }
+
+  ::ng-deep .mat-grid-tile-content {
+    align-items: flex-start;
+    justify-content: flex-start;
+    .mat-toolbar {
+      background-color: transparent;
+      .mat-button {
+        font-family: "Spartan";
+        font-weight: 400;
+        margin: 10px;
+        .mat-button-focus-overlay {
+          background-color: transparent;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .mat-toolbar-desktop {
+      .mat-button {
+        color: hsl(0, 0%, 100%);
+      }
+    }
+    .mat-toolbar-mobile {
+      .mat-button {
+        color: hsl(0, 0%, 0%);
+      }
+      .logo {
+        margin: auto;
+      }
+    }
+    .white-background {
+      background-color: hsl(0, 0%, 100%);
+    }
+    .stepper-nav {
+      margin: 0;
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+    }
+    .stepper-button {
+      background-color: hsl(0, 0%, 0%);
+      width: 75px;
+      height: 75px;
+      &:hover {
+        background-color: hsl(0, 0%, 27%);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.slider {
+  div {
+    margin-bottom: 100px;
+    @media screen and (min-width: 768px) {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+  h1 {
+    font-weight: 500;
+    margin-left: 20px;
+  }
+  p {
+    color: hsl(0, 0%, 63%);
+    font-weight: 300;
+    margin-left: 20px;
+  }
+  .mat-button {
+    font-family: "Spartan";
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 10px;
+    img {
+      margin-left: 30px;
+    }
+    ::ng-deep .mat-button-focus-overlay {
+      background-color: transparent;
+    }
+    &:hover {
+      color: hsl(0, 0%, 63%);
+    }
+  }
+  .stepper-nav {
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+  .stepper-button {
+    background-color: hsl(0, 0%, 0%);
+    width: 75px;
+    height: 75px;
+    &:hover {
+      background-color: hsl(0, 0%, 27%);
+      cursor: pointer;
+    }
+  }
+}
+
+.about-section {
+  div {
+    @media screen and (min-width: 768px) {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+  h1 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  p {
+    color: hsl(0, 0%, 63%);
+    font-weight: 300;
+    font-size: 12px;
+    margin-left: 20px;
+  }
+}
